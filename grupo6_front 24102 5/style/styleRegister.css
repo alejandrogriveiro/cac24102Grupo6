@@ -1,0 +1,274 @@
+/*-----STYLES REGISTER-----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.body__register{
+    height: 100vh;
+    background-image: url(../img/bg-register.jpg);
+}
+.header__register{
+    
+    color: #ffffff;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    padding: 1.5rem 0;
+}
+.logo{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1rem;
+}
+.titulo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.seccion__registro{
+    background-color: #333333;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    font-size: 1.2rem;
+
+}
+.form{
+    width: 80%;
+}
+.register{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid #9f3647;
+    background-color: #333333;
+    outline: none;
+    color: #ffffff;
+    
+}
+.register input{
+    background-color: #333333;
+    border: none;
+    outline: none;
+}
+.fechaNacimiento{
+    align-items: center;
+    color: #ffffff;
+    text-align: justify;
+    
+}
+
+#pais{
+    background-color: #333333;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+label{
+    color: #ffffff;
+}
+.div__boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    padding: 0.8rem 0.8rem;
+    font-size: 0.8rem;
+    box-sizing: content-box;
+    background-color: #9f3647;
+    border: 2px solid #9f3647;
+    color: #ffffff;
+    border-radius: 5px;
+    
+}
+.ayuda{
+    margin-top: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #787878;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*-----RESPONSIVE 880PX REGISTER-----*/
+
+.body__register {
+    height: 100vh;
+    background-image: url(../img/bg-register.jpg);
+}
+
+.header__register {
+    color: #ffffff;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    padding: 1.5rem 0;
+}
+
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.seccion__registro {
+    background-color: #333333;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    font-size: 1.2rem;
+}
+
+.form {
+    width: 80%;
+}
+
+.register {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid #9f3647;
+    background-color: #333333;
+    outline: none;
+    color: #ffffff;
+}
+
+.register input {
+    width: 100%;
+    font-size: 20px;
+    background-color: #333333;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+.error__text{
+    color: #ff0000;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+.register input[type="password"] {
+    color: transparent;
+}
+
+.register input[type="password"]:focus {
+    color: #ffffff; 
+    font-size: 25px;
+}
+
+
+.fechaNacimiento {
+    align-items: center;
+    color: #ffffff;
+    text-align: justify;
+}
+
+#pais {
+    background-color: #333333;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+label {
+    color: #ffffff;
+}
+
+.div__boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    padding: 0.8rem 0.8rem;
+    font-size: 0.8rem;
+    box-sizing: content-box;
+    background-color: #9f3647;
+    border: 2px solid #9f3647;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.ayuda {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #787878;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilos específicos para pantallas con un ancho máximo de 880px */
+@media only screen and (max-width: 880px) {
+    .seccion__registro {
+        width: 80%; /* Reduce el ancho del contenedor en pantallas más pequeñas */
+    }
+    
+    .form {
+        width: 100%; /* Ajusta el ancho del formulario para que ocupe todo el ancho del contenedor */
+    }
+}

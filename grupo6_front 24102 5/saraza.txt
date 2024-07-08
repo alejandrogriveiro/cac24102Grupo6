@@ -1,0 +1,35 @@
+
+    // Crear el objeto de datos de inicio de sesión
+    var loginData = {
+        email: email,
+        password: password
+    };
+
+    // Realizar la solicitud fetch al backend
+    fetch('http://localhost:8080/api/login', {  // Asegúrate de que esta URL sea correcta
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(loginData),
+        
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        console.log(response.json());
+        return response.json();
+    })
+    .then(data => {
+        if (data) {
+            alert('Inicio de sesión exitoso');
+            // Aquí puedes redirigir a otra página o realizar alguna acción adicional
+        } else {
+            alert('Credenciales incorrectas');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Hubo un problema con el servidor. Intente nuevamente más tarde.');
+    });

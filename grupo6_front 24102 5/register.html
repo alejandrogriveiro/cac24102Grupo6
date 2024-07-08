@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styleREgister.css">
+    
+    <title>Register</title>
+</head>
+<body class="body__register">
+
+    <header class="header__register">
+        <nav class="header__nav">
+            <a class="logo" href="index.html">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>CAC - Movies - Grupo 6</span>
+            </a>
+        </nav>
+    </header>
+
+    <section class="seccion__registro">
+        <form class="form" id="registerForm" action="http://localhost:8080/api/users" method="post">
+            <h2 class="titulo">Registro</h2>
+            <div class="register">
+                <input type="text" placeholder="Nombre" id="nombre" class="nombre">
+            </div>
+            <div class="register">
+                <input type="text" placeholder="Apellido" id="apellido" class="apellido">
+            </div>
+            <div class="register">
+                <input type="text" placeholder="Email" name="email" id="email">
+            </div>
+            <div class="register">
+                <input type="password" placeholder="Password" name="password" id="password">
+            </div>
+            <div class="register">
+                <input type="date" placeholder="Fecha de Nacimiento" name="fechaNacimiento" class="fechaNacimiento" id="fechaNacimiento">
+            </div>
+            <div class="register">
+                <select name="pais" id="pais">
+                    <option value="">País</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label class="checkbox" for="terminos">Acepto Términos y condiciones</label>
+            </div>
+            <div class="div__boton">
+                <input class="boton" type="submit" value="Registrarse">
+            </div>
+            <div>
+                <a class="ayuda" href="#">Necesitas ayuda?</a>
+            </div>
+        </form>
+    </section>
+
+    <script src="./js/scriptRegister.js"></script>
+
+
+
+</body>
+</html>

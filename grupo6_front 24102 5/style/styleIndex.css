@@ -1,0 +1,507 @@
+/*-----NORMALIZADO-----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+/*--ESTILO PARA LA BARRA DE DESPLAZAMIENTO VERTICAL DEL NAVEGADOR-----*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #181419;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9f3647;
+    border-radius: 5px;
+}
+
+/* Estilos para la barra de desplazamiento vertical en navegadores compatibles con Firefox */
+/* Estos prefijos pueden no ser necesarios en versiones recientes de Firefox */
+/* Si lo consideras, puedes eliminarlos */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #9f3647 #181419;
+}
+
+/* Estilos para el track de la barra de desplazamiento vertical en navegadores compatibles con Firefox */
+/* Si prefieres un color específico para el track, puedes ajustar esto */
+html::-moz-scrollbar-track {
+    background-color: #181419;
+}
+
+/*-----HEADER-----*/
+
+.header{
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    padding: 1.5rem 0;
+}
+.logo{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.lista__nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.lista__item{
+    margin-right: 20px;
+}
+.link__nav{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover{
+        transform: scale(0.95);
+        box-shadow: 0 0 10px #ffffff;
+        border-radius: 5px;
+    }
+}
+#sesion{
+    background-color: black;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition:  transform 0.3s, box-shadow 0.3s;
+    &:hover {
+        background-color: #9f3647;
+        transform: scale(.95);
+        box-shadow: 0 0 10px #ffffff;
+    }
+}
+
+/*-----HERO-----*/
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.button__reg{
+    background-color: #9f3647;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s; /*animacion boton registrate*/
+    &:hover {
+        background-color: #9f3647;
+        transform: scale(.95);
+        box-shadow: 0 0 10px #ffffff
+    };
+}
+
+/*-----BUSCAR-----*/
+
+.buscar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #181419;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 10px;
+    height: 400px;
+}
+.buscar__placeholder{
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    color: #181419;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 20px 0;
+    outline: none;
+    padding: 0 20px;
+    width: 500px;
+}
+.buscar__button{
+    background-color: #9f3647;
+    display: inline-block;
+    color: #ffffff;
+    height: 50px;
+    margin: 20px 10px;
+    padding: 0 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid #ffffff;
+    text-align: center;
+    transition: transform 0.3s, box-shadow .03s;
+    &:hover {
+        background-color: #9f3647;
+        transform: scale(.95);
+        box-shadow: 0 0 10px #ffffff;
+    }
+}
+
+hr{
+    border: 1px solid #9f3647;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.tendencias{
+    background-color: #181419;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.tendencias__img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+
+
+  .tendencias__movies {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.tendencias__movies h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: transparent; 
+    padding: 5px;
+    display: none;
+}
+
+.tendencias__movies:hover img {
+    opacity: 0.4;
+}
+
+.tendencias__movies:hover h5 {
+    display: block;
+}
+
+
+
+
+
+
+.tendencias__movies:hover h5 {
+    display: block; /* mostrar el h5 cuando se hace hover en el contenedor */
+}
+
+
+
+.tendencias__movies img {
+  height: auto;
+  max-width: 75%;
+  object-fit: cover;
+  border-radius: 40px;
+  margin-top: 40px;
+  transition: transform 0.3s, box-shadow 0.3s; /*animacion boton registrate*/
+  &:hover {
+      transform: scale(.95);
+      box-shadow: 0 0 20px #9f3647
+    };
+}
+.tendencias__button{
+    border: 1px solid #ffffff;
+    box-sizing: content-box;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #9f3647;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 60px;
+    transition: transform 0.3s, box-shadow 0.3s; /*animacion boton registrate*/
+    &:hover {
+        transform: scale(.95);
+        box-shadow: 0 0 20px #9f3647
+      };
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h5{
+  font-size: 1rem;
+}
+
+/*-----ACLAMADAS-----*/
+
+#aclamadas {
+    background-color: #181419;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#list-top-rated {
+    margin: 35px 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 70%;
+    overflow-x: auto;
+}
+
+#list-top-rated::-webkit-scrollbar {
+    width: 10px;
+}
+
+#list-top-rated::-webkit-scrollbar-track {
+    background-color: #181419;
+}
+
+#list-top-rated::-webkit-scrollbar-thumb {
+    background-color: #9f3647;
+    border-radius: 5px;
+}
+
+
+.aclamadas{
+    background-color: #181419;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.wrapper{
+    min-width: 150px;
+    transition: all 0.2s ease-in-out;
+}
+.wrapper:hover{
+    filter: brightness(125%);
+}
+.movie-item-img-v2{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/*-----FOOTER-----*/
+
+.footer{
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista__footer{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+/*.lista__item{
+    margin-left: 20px;
+}*/
+.link__nav{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.adm__peli{
+    background-color: black;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.subir{
+    position: fixed;
+    bottom: 115px;
+    right: 10px;
+    background-color: #9f3647;
+    cursor: pointer;
+    
+}
+.adm__peli{
+    padding: 0;
+}
+#main{
+    align-items: center;
+}
+
+/*-----RESPONSIVE 880PX-----*/
+
+/*-----HEADER-----*/
+
+@media (max-width: 880px) {
+    .header{
+        max-width: 100%;
+        height: initial;
+        .header__nav{
+            margin-left: 10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 20px;
+            .lista__nav{
+                #sesion{
+                    font-size: .6rem;
+                    padding: 5px;
+                }
+            }
+            .logo{
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+            .lista__nav{
+                padding: initial;
+                .lista__item{
+                    .link__nav{
+                        font-weight: 400;
+                        margin-right: initial;
+                        font-size: 1rem;
+                        padding: 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .main{ width: 100%;
+        .hero{
+            height: 60vh;
+            .h1{
+                font-size: 2.5rem;
+            }
+            .h2{
+                font-size: 1.5rem;
+            }
+            .button__reg{
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        .buscar{
+            height: 30vh;
+            h2{
+                font-size: 1.5rem;
+            }
+        
+            .buscar__placeholder{
+                font-size: .8rem;
+                height: 40px;
+                width: 300px;
+            }
+            .buscar__button{
+                height: 40px;
+                padding: 0 15px;
+                font-size: .8rem;
+            }
+            }
+            
+        }
+        .tendencias{
+            width: 100%;
+            h2{
+               font-size: 1.5rem;
+            }
+            .tendencias__img{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                grid-template-columns: repeat(2, 1fr);
+            }
+                .tendencias__movies a{
+                    width: 100%;
+                    height: 500px;
+                }
+            }
+            .aclamadas{
+                #list-top-rated{
+                    width: 70%;
+                    gap: 5px;
+                }*/
+            
+            #aclamadas #list-top-rated {
+                width: 70%;
+                gap: 5px;
+            }
+        }
+    }
+
+    /*-----FOOTER-----*/
+
+@media (max-width: 880px) {
+    .footer{
+        height: initial;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        
+    }
+    .lista__footer{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    
+}
+
+
+

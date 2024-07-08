@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./style/styleIndex.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--HEADER-->
+
+<header class="header">
+<nav class="header__nav">
+    <a class="logo" href="#">
+        <i class="fas fa-film" aria-hidden="true"></i>
+        <span>CAC - Movies - Grupo 6</span>
+    </a>
+    <ul class="lista__nav">
+        <li class="lista__item"><a class="link__nav" href="#tendencias">Tendencias</a></li>
+        <li class="lista__item"><a class="link__nav" href="register.html">Registrarse</a></li>
+        <li class="lista__item"><a id="sesion" href="sesion.html">Iniciar Sesión</a></li>
+    </ul>
+</nav>
+</header>
+
+<main id="main" class="main">
+
+<!--HERO-->
+
+    <section class="hero">
+        <h1 class="h1">Peliculas y series ilimitadas <br> en un solo lugar</h1>
+        <h2 class="h2">¡Disfruta donde quieras, cancela cuando quieras!</h2>
+        <button class="button__reg">Registrarse</button>
+    </section>
+
+    <section class="buscar">
+        <h2 class="h2__buscar">¿Qué estás buscando para ver?</h2>
+        <div class="buscar__input">
+            <input class="buscar__placeholder" type="text" placeholder="Buscar...">
+            <button class="buscar__button">Buscar</button>
+        </div>
+    
+    </section>
+    
+<!--TENDENCIAS-->
+
+    <section id="tendencias" class="tendencias">
+        <hr class="hr">
+        <h2>Las tendencias de hoy</h2>
+
+        <section class="tendencias">
+            <div id="contenedor" class="tendencias__img container">
+
+                <!--AQUI SE INSERTAN LAS PELICULAS-->
+
+            </div>
+
+
+        </section>
+        <div class="button container">
+            <button id="btnAnterior" class="tendencias__button"> anterior</button>
+            <button id="btnSiguiente" class="tendencias__button">siguiente</button>
+        </div>
+    <hr class="hr">
+    </section>
+
+<!--ACLAMADAS-->
+
+    <section class="aclamadas">
+        <h2>Las más aclamadas</h2>
+        <div id="list-top-rated">
+            <div class="movie-item-v2">
+                <a href="#">
+                    <div class="wrapper">
+                        <img src="./img/peli_1.jpg" alt="" class="movie-item-img-v2">
+                    </div>
+                </a>
+            </div>
+            <div class="movie-item-v2">
+                <a href="#">
+                    <div class="wrapper">
+                        <img src="./img/peli_2.jpg" alt="" class="movie-item-img-v2">
+                    </div>
+                </a>
+            </div>
+            <div class="movie-item-v2">
+                <a href="#">
+                    <div class="wrapper">
+                        <img src="./img/peli_3.jpg" alt="" class="movie-item-img-v2">
+                    </div>
+                </a>
+            </div>
+            <div class="movie-item-v2">
+                <a href="#">
+                    <div class="wrapper">
+                        <img src="./img/peli_4.jpg" alt="" class="movie-item-img-v2">
+                    </div>
+                </a>
+            </div>
+            <div class="movie-item-v2">
+                <a href="#">
+                    <div class="wrapper">
+                        <img src="./img/peli_5.jpg" alt="" class="movie-item-img-v2">
+                    </div>
+                </a>
+            </div>
+            <div class="movie-item-v2">
+                <a href="#">
+                    <div class="wrapper">
+                        <img src="./img/peli_6.jpg" alt="" class="movie-item-img-v2">
+                    </div>
+                </a>
+            </div>
+            <div class="movie-item-v2">
+                <a href="#">
+                    <div class="wrapper">
+                        <img src="./img/peli_7.jpg" alt="" class="movie-item-img-v2">
+                    </div>
+                </a>
+            </div>
+            <div class="movie-item-v2">
+                <a href="#">
+                    <div class="wrapper">
+                        <img src="./img/peli_8.jpg" alt="" class="movie-item-img-v2">
+                    </div>
+                </a>
+            </div>
+            <div class="movie-item-v2">
+                <a href="#">
+                    <div class="wrapper">
+                        <img src="./img/peli_9.jpg" alt="" class="movie-item-img-v2">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER-->
+
+<footer class="footer">
+    <nav class="nav__footer">
+        <ul class="lista__footer">
+            <li class="lista__item"><a class="link__nav" href="#">Términos y condiciones</a></li>
+            <li class="lista__item"><a class="link__nav" href="#">Preguntas frecuentes</a></li>
+            <li class="lista__item"><a class="link__nav" href="#">Ayuda</a></li>
+            <li class="lista__item"><a class="link__nav adm__peli" href="#">Administrador Peliculas</a></li>
+        </ul>
+    </nav>
+    <a id="main" href="#main" class="subir">
+        <img src="./img/flecha-hacia-arriba.png" alt="subir">
+    </a>
+</footer>
+
+    <script src="./js/scriptTendencias.js"></script>
+
+</body>
+</html>
